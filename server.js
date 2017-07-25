@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 });
 
 
-var port = process.env.port || 3000;
+var port = process.env.PORT || 3000;
 app.get('/', (req, res) => {
     //res.send('hello how are u');
     res.render('home.hbs', {
