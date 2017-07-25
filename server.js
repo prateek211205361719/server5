@@ -1,6 +1,4 @@
 
-
-
 var express = require('express');
 var app = express();
 
@@ -32,6 +30,13 @@ app.get('/about', (req, res) => {
         title:'About page'
     });
 });
+app.get('/projects', (req, res) => {
+    //res.send('hello how are u');
+    res.render('project.hbs', {
+        title:'project page'
+    });
+});
+
 app.listen(port, function(){
     console.log('------port-----'+port);
 });
